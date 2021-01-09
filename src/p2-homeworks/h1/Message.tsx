@@ -7,12 +7,13 @@ type messageBlockPropsType = {
     name: string
     message: string
     time: string
+
 }
 
 
 function Message(props: messageBlockPropsType) {
     return (
-        <div className={s.message}>
+        <div className={s.message}  >
             <div className={s.avatarBlock}><img src={props.avatar} alt=""/></div>
             <div className={s.messageBlock}>
                 <div className={s.name}>{props.name}</div>

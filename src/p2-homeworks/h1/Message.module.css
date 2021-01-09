@@ -54,21 +54,18 @@
 
 .textMessage {
     display: flex;
-    position: relative;
     flex-direction: column;
     height: 100%;
     width: 100%;
     flex-wrap: wrap;
     padding: 10px;
-
+    position: relative;
 }
 
 .timeMessage {
-    padding-left: 10px;
-    padding-bottom: 10px;
-    padding-top: 10px;
-    justify-content: flex-end;
     color: azure;
+    position: relative;
+    left: 180px;
 }
 
 .name {
