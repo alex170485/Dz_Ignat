@@ -9,13 +9,13 @@
     padding: 20px;
 
 }
+
 .avatarBlock {
     height: 50px;
     width: 50px;
     border: 2px solid black;
     border-radius: 20px;
 }
-
 
 
 .avatarBlock img {
@@ -36,6 +36,7 @@
     margin-left: 35px;
     word-wrap: break-word;
 }
+
 .messageBlock:after {
     content: '';
     position: absolute;
@@ -51,6 +52,7 @@
     margin-top: -16.5px;
     margin-left: -33px;
 }
+
 .textMessage {
     display: flex;
     position: relative;
@@ -61,6 +63,7 @@
     padding: 10px;
 
 }
+
 .timeMessage {
     padding-left: 10px;
     padding-bottom: 10px;
@@ -68,6 +71,7 @@
     justify-content: flex-end;
     color: azure;
 }
+
 .name {
     padding: 10px;
     color: aquamarine;
