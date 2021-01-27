@@ -3,7 +3,7 @@ import Affair from "./Affair";
 import {AffairType} from "./HW2";
 
 type AffairsPropsType = { // need to fix any
-    data: any
+    data: AffairType[]
     setFilter: any
     deleteAffairCallback: any
 }
@@ -12,10 +12,13 @@ function Affairs(props: AffairsPropsType) {
     const mappedAffairs = props.data.map((a: AffairType) => (
         <Affair // should work
             key={a._id} // кеи ОБЯЗАТЕЛЬНЫ в 99% - так что лучше их писать всегда при создании компонент в мапе
-            affair={a}
+            affair={props.data}
             deleteAffairCallback={props.deleteAffairCallback}
         />
     ))
+
+
+
 
     const setAll = () => {}; // need to fix
     const setHigh = () => {};
@@ -26,6 +29,7 @@ function Affairs(props: AffairsPropsType) {
         <div>
 
             {mappedAffairs}
+
 
             <button onClick={setAll}>All</button>
             <button onClick={setHigh}>High</button>
